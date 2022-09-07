@@ -1,9 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ToastController, AlertController } from '@ionic/angular';
-import { Router } from '@angular/router';
-import { Storage } from '@ionic/storage';
-//import { AuthenticationService } from '../../services/authentication.service';
-
+import { NavigationExtras, Router } from '@angular/router'
 
 @Component({
   selector: 'app-login',
@@ -14,15 +10,24 @@ export class LoginPage implements OnInit {
 
 // Modelo para el login de un usuario
 login:any={
-  Usuario:"",
-  Password:""
+  usuario:"",
+  password:""
 }
 
 field:string="";
 
-  constructor() { }
+  constructor(private router:Router) { }
 
   ngOnInit() {
   }
+
+navegar(){
+  let navigationExtras:NavigationExtras={
+    state:{
+      login:this.login
+    }
+  };
+  this.router.navigate(['./recover'],navigationExtras);
+}
 
 }
