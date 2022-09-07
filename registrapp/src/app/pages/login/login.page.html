@@ -1,0 +1,42 @@
+<!--Barra de herramientas superior-->
+<ion-toolbar>
+  <ion-button slot="end" shape="block" id="buttonToolbar" fill="transparent">CREAR CUENTA</ion-button>
+</ion-toolbar>
+
+<!--Logo de la aplicación-->
+<ion-card-title class="ion-padding-top ion-text-center">
+    <div id="logo">
+      <img src="assets/icon/logo_duoc.png">
+    </div>
+</ion-card-title>
+
+<!--Contenido cuerpo de la página-->
+<ion-content>
+
+  <!--Título de la aplicacion-->
+  <div class="ion-text-center" id="tituloLogin">
+    <ion-label>
+      <h1>REGISTRAPP</h1>
+      <p>Registro de asistencias</p>
+    </ion-label>
+  </div>  
+
+    <!--Formulario de inicio de sesión-->
+    <ion-card class="ion-text-center">
+      <ion-card-content>
+        <ion-item>
+          <ion-label position="flex">Nombre de usuario</ion-label>
+          <ion-input type="text" [(ngModel)]="login.Usuario"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="flex">Contraseña</ion-label>
+          <ion-input type="password" [(ngModel)]="login.Password"></ion-input>
+        </ion-item>
+      </ion-card-content>
+      <div>
+        <ion-button shape="block" id ="botonIngresar" fill="light">INGRESAR</ion-button> 
+        <ion-button shape="block" id="botonRecuperar" fill="clear">RECUPERAR CONTRASEÑA</ion-button>
+      </div>
+      </ion-card>
+
+</ion-content>

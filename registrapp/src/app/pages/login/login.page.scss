@@ -1,0 +1,68 @@
+//Diseño barra de herramientas superior
+ion-toolbar {
+    #buttonToolbar {
+        color: #ffffff;
+        font-size: 11px;
+        margin-top: 25px;
+    }
+}
+
+//Diseño del logo de la página
+ion-card-title {
+    #logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img {
+            background: #ffffff;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 8px solid #ffffff;
+            margin-top: 5px;
+        }
+    }
+}
+
+//Diseño cuerpo de la página
+ion-content {
+    //Diseño de titulo de la aplicacion
+    #tituloLogin{
+        align-items:center;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        h1 {
+            color: #ffffff;
+        }
+        p {
+            margin-top: 0px;
+            font-size: 13px;
+            color: #ffffff;
+        }
+    }
+    //Diseño formulario
+    ion-card-content {
+        ion-item {
+            margin-bottom: 10px;
+
+        }
+        ion-label {
+            font-size: 11px;
+        } 
+    }
+    //Diseño botón iniciar sesión
+    #botonIngresar {
+        color: white;
+        height: 35px;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: 30px;
+        margin-bottom: 8px;
+    }
+    //Diseño boton recuperar contraseña
+    #botonRecuperar {
+        color: white;
+        font-size: 11px;
+        margin-bottom: 20px;
+    }
+}
